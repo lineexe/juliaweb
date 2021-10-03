@@ -54,6 +54,13 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a:hover{
+    background: none;
+    text-decoration: none;
+
+    color: rgb(206, 50, 102);
+}
+
 .imgsapo img{
     margin-top: 5px;
     border-radius: 5px;
