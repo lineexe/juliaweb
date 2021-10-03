@@ -22,6 +22,12 @@ body h2{
 
     margin-top: 30px;
     margin-bottom: 10px;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+body p{
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar{
