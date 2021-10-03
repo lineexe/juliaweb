@@ -16,6 +16,8 @@
 
     font-size: 18px;
     margin: 10px;
+    
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -63,7 +65,10 @@ main{
 .apelotxt p{
     font-size: 15px;
     padding: 15px;
+}
 
+.apelotxt{
+    font-family: 'Lora', serif;
 }
 
 .redes img{
