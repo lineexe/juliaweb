@@ -1,0 +1,325 @@
+*{
+    background: pink;
+}
+
+.navbar{
+    margin-top: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgba(24, 22, 22, 0.746);
+
+    background: rgb(255, 172, 201);
+    padding: 5px;
+    border-radius: 10px;
+
+    font-size: 18px;
+    margin: 10px;
+}
+
+.container{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title img{
+    margin-top: 12px;
+
+    width: 200px;
+    opacity: 0.9;
+}
+
+/*foto central ;*/
+.julimg img{ 
+    width: 240px;
+    height: 282px;
+    position: absolute;
+
+    margin: -345px -120px;
+    z-index: 1;
+}
+
+.quadro img{
+    width: 350px;
+    height: 400px;
+
+    position: relative;
+}
+
+/*
+.fotoC img{
+    
+}
+*/
+
+.apelotxt p{
+    font-size: 15px;
+    padding: 15px;
+
+}
+
+.redes img{
+    width: 35px;
+    margin: 5px;
+    padding-top: 15px;
+}
+
+/* modal universal*/
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+
+    display: none;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.modal-container.open{
+    display: flex;
+}
+
+/* modal do zep */
+.modaldozap{
+    background-color: whitesmoke;
+    padding: 10px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 5px 3px rgba(216, 170, 208, 0.514);
+    position: relative;
+}
+
+.modaldozap h3{
+    background: none;
+}
+
+/* animação */
+@keyframes modal{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -80px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.open .modaldozap{
+    animation: modal 2s;
+}
+
+.btnclose{
+    background: pink;
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    border: none;
+
+    box-shadow: 0 0 5px 3px rgba(216, 170, 208, 0.514);
+
+    top: -15px;
+    right: -10px;
+
+    cursor: pointer;
+}
+
+/* modal do info */
+.modal-containerInfo{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+
+    display: none;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.modal-containerInfo.openi{
+    display: flex;
+}
+
+.modal-containerInfo h1{
+    background: none;
+}
+
+.modalInfo{
+    width: 45%;
+    height: 75%;
+    position: relative;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(216, 170, 208, 0.514);
+
+    background-color: beige;
+
+
+    /*centralizar todo conteudo TEMPORARIO*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncloseInfo{
+    background: pink;
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    border: none;
+
+    box-shadow: 0 0 5px 3px rgba(216, 170, 208, 0.514);
+
+    top: -15px;
+    right: -10px;
+
+    cursor: pointer;
+}
+
+/* animação */
+@keyframes modalI{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -80px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.openi .modalInfo{
+    animation: modalI 1s;
+}
+
+/* modal do art */
+.modal-containerArt{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+
+    display: none;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.modal-containerArt.opena{
+    display: flex;
+}
+
+.modalArt{
+    width: 40%;
+    height: 85%;
+    position: relative;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(216, 170, 208, 0.514);
+
+    background-color: beige;
+
+    /*centralizar todo conteudo TEMPORARIO*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncloseArt{
+    background: pink;
+    position: absolute;
+
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+
+    box-shadow: 0 0 5px 3px rgba(216, 170, 208, 0.514);
+
+    top: -15px;
+    right: -10px;
+
+    cursor: pointer;
+}
+
+/* animação nao funciono putamerda*/
+@keyframes modalA{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -80px, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.openA .modalArt{
+    animation: modalA 1s;
+}
+
+/* slide */
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90vh;
+}
+
+.carousel-inner img{
+    height: 500px;
+   
+}
+
+.carousel.item img {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*footer*/
+/*
+.dev img{
+    width: 125px;
+
+    padding-top: 25px;
+}
+
+.dev{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.438);
+}
+
+html disso
+
+<footer class="dev">
+        <img src="img/linha.png" alt="">
+        <p>desenvolvido por mecarolme</p>
+    </footer>
+*/
